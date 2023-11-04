@@ -1,7 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import {ExternalLink} from "lucide-astro";
 import Button from '../components/ul/Button.astro';
 ---
 
@@ -10,11 +9,11 @@ import Button from '../components/ul/Button.astro';
 
 		<div class="grid place-items-center gap-6">
 
-			<h1 class="pt-10 text-2xl md:text-4xl lg:text-5xl font-bold text-center">Template for creating websites<br/>with <span class="text-orange-600">Astro</span> + <span class="text-sky-500">Tailwind CSS</span></h1>
-			<p class="text-gray-600">AstroとTailwindCSSを使用したテンプレートです。<br/>PrettierとEsLintを導入してるので環境構築不要ですぐに開発することができます。</p>
+			<h1 class="pt-10 text-4xl lg:text-5xl font-bold text-center">Template for creating websites<br/>with <span class="text-orange-500">Astro</span> + <span class="text-sky-500">Tailwind CSS</span></h1>
+			<p class="max-w-lg md:max-w-full mx-auto md:text-center text-gray-600">AstroとTailwindCSSを使用したテンプレートです。<br/>Prettier・ESLint・Huskyを導入しているため、環境構築不要ですぐに開発することができます。</p>
 			<Button>Get template
+<Image src="/external-link.svg" alt="External Link" width={16} height={16} class="ml-1 stroke-white"/>
 
-				<ExternalLink size={16} class="ml-1"/>
 			</Button>
 			<Image src="/astro-image.svg" alt="Hero Image" width={500} height={500} class="pt-4 md:pt-10 animate-bounceAstro"/>
 		</div>

@@ -1,56 +1,48 @@
-# Astro Starter Kit: Basics
+# Astro Tailwind Starter
 
-```sh
-npm create astro@latest -- --template basics
+AstroとTailwind CSSをつかったWebサイトを開発するためのテンプレートです。
+
+## 使用技術
+
+### Node version
+
+- node v18.7.1
+- pnpm v8.10.2
+
+### フロントエンド
+
+- [Astro](https://astro.build/) v3.4.3
+- [Tailwind CSS](https://tailwindcss.com/) v3.0.24
+- [TypeScript] v5.2.2
+
+### Linter / Formatter
+
+リンターに[ESLint](https://eslint.org/)、フォーマッターに[Prettier](https://prettier.io/)を使用しており、[Husky](https://typicode.github.io/husky/)でコミット・プッシュ時に実行されるようになっています。
+ESLintとPrettierの設定はプロジェクトに応じて都度変更してください。
+
+## 開発の仕方
+
+### パッケージのインストール
+
+```shell
+pnpm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### ローカル環境の立ち上げ
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```shell
+pnpm dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+[http://localhost:4321](http://localhost:4321)でたちあがります。
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## コマンド
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-# astro-tailwind-starter
+| Command        | Action                                   |
+| :------------- | :--------------------------------------- |
+| `pnpm install` | パッケージをインストール                 |
+| `pnpm dev`     | `localhost:4321`で開発サーバーを起動する |
+| `pnpm build`   | デプロイ用に`./dist/`にビルドする        |
+| `pnpm preview` | ローカルでビルドをプレビューする         |
+| `pnpm format`  | Prettierを実行する                       |
+| `pnpm lint`    | ESLintを実行する                         |

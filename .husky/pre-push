@@ -1,1 +1,0 @@
-pnpm exec husky set .husky/pre-push "pnpm run check"

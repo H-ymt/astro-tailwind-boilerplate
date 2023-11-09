@@ -13,7 +13,7 @@ AstroとTailwind CSSをつかったWebサイトを開発するためのテンプ
 
 - [Astro](https://astro.build/) v3.4.3
 - [Tailwind CSS](https://tailwindcss.com/) v3.0.24
-- [TypeScript](https://www.typescriptlang.org/) v5.2.2
+- [TypeScript] v5.2.2
 
 ### Linter / Formatter
 
